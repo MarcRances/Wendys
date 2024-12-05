@@ -1,0 +1,142 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+header {
+  background-color: #e60012; /* Wendy's red */
+  padding: 15px 0;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  font-size: 18px;
+}
+
+footer {
+  background-color: #e60012; /* Wendy's red */
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+.hero {
+  background-image: url('https://www.wendys.com.ph/assets/images/hero-bg.jpg'); /* Placeholder image */
+  background-size: cover;
+  text-align: center;
+  padding: 100px 20px;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+.cta-btn {
+  background-color: #fff;
+  color: #e60012;
+  padding: 12px 25px;
+  font-size: 18px;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+
+.cta-btn:hover {
+  background-color: #f1f1f1;
+}
+
+.about, .contact {
+  text-align: center;
+  background-color: #fff;
+  padding: 40px 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact input, .contact textarea {
+  width: 80%;
+  max-width: 500px;
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
+  padding: 12px 25px;
+  background-color: #e60012;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #c90012;
+}
+
+#confirmation-message {
+  font-size: 18px;
+  color: green;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .cta-btn {
+    font-size: 16px;
+  }
+
+  .contact input, .contact textarea {
+    width: 90%;
+  }
+}
